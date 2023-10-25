@@ -8,9 +8,7 @@
 
 body {
     padding: 0 10vw;
-    /* highlight color - #7285a8 */
     width: 100%;
-    /*overflow-x: hidden;*/
 }
 
 .body-bg {
@@ -18,21 +16,21 @@ body {
     bottom: 0;
     right: 0;
     z-index: 0;
-    background: url("/assests/img/background.jpg") center repeat;
+    background: url("/assets/img/background.jpg") center repeat;
     background-size: 400px;
     width: 100%;
     height: 100%;
     opacity: .25;
 }
 
-/*hero section*/
+/*                /////////////////////////////////////    hero section   /////////////////////////////////////////////////////               */
+
 header {
     position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
     height: 100px;
-    /*border: 1px solid red;*/
 }
 
 header {
@@ -112,12 +110,10 @@ header.sticky {
     position: relative;
     width: 100%;
     height: 960px;
-    /*border: 1px solid red;*/
 }
 
 .hero-sec-wrapper {
     position: absolute;
-    /*border: 1px solid red;*/
     height: 430px;
     width: 800px;
     top: 0;
@@ -206,7 +202,8 @@ header.sticky {
     color: #8672E9;
 }
 
-/*about me*/
+/*                /////////////////////////////////////    about me section   /////////////////////////////////////////////////////               */
+
 .about-socials {
     display: flex;
     align-items: center;
@@ -357,10 +354,11 @@ header.sticky {
 
 .about-img {
     width: 470px;
-    height: 560px;
+    height: 750px;
 }
 
-/*services*/
+/*                /////////////////////////////////////    services section   /////////////////////////////////////////////////////               */
+
 #services {
     display: grid;
     position: relative;
@@ -399,7 +397,7 @@ header.sticky {
 }
 
 
-/*projects*/
+/*                /////////////////////////////////////    project section   /////////////////////////////////////////////////////               */
 #projects {
     display: flex;
     flex-direction: column;
@@ -482,7 +480,8 @@ header.sticky {
     font-weight: 500;
 }
 
-/*Assignments*/
+/*                /////////////////////////////////////    assignment section   /////////////////////////////////////////////////////               */
+
 #assignments {
     display: grid;
     position: relative;
@@ -534,7 +533,8 @@ header.sticky {
     color: #7284A6;
 }
 
-/*gallery*/
+/*                /////////////////////////////////////    gallery section   /////////////////////////////////////////////////////               */
+
 .gallery-sec {
     position: relative;
     height: fit-content;
@@ -578,36 +578,37 @@ header.sticky {
 }
 
 .gallery-img:first-child {
-    background-image: url("/assests/img/gallery/photo.JPG");
+    background-image: url("/assets/img/gallery/photo.JPG");
 
 }
 
 .gallery-img:nth-child(2) {
-    background-image: url("/assests/img/gallery/photo2.jpg");
+    background-image: url("/assets/img/gallery/photo2.jpg");
 
 }
 
 .gallery-img:nth-child(3) {
-    background-image: url("/assests/img/gallery/photo3.jpg");
+    background-image: url("/assets/img/gallery/photo3.jpg");
 
 }
 
 .gallery-img:nth-child(4) {
-    background-image: url("/assests/img/gallery/photo4.jpg");
+    background-image: url("/assets/img/gallery/photo4.jpg");
 
 }
 
 .gallery-img:nth-child(5) {
-    background-image: url("/assests/img/gallery/photo5.jpg");
+    background-image: url("/assets/img/gallery/photo5.jpg");
 
 }
 
 .gallery-img:nth-child(6) {
-    background-image: url("/assests/img/gallery/photo6.jpg");
+    background-image: url("/assets/img/gallery/photo6.jpg");
 
 }
 
-/*contact sec*/
+/*                /////////////////////////////////////    contact section   /////////////////////////////////////////////////////               */
+
 .contact-sec {
     position: relative;
     /*border: 1px solid red;*/
@@ -710,7 +711,7 @@ header.sticky {
 
 }
 
-/*                //////////////////////////////////////////////////////////////////////////////////////////               */
+/*                /////////////////////////////////////    media queries   /////////////////////////////////////////////////////               */
 
 @media all and (max-width: 1650px) {
     .assignment-card {
@@ -726,10 +727,6 @@ header.sticky {
         font-size: 15px;
     }
 
-    /*#services {*/
-    /*    grid-template-columns: repeat(2, 1fr);*/
-    /*    row-gap: 100px;*/
-    /*}*/
     .service-card {
         width: 300px;
         padding: 50px 30px;
@@ -1049,6 +1046,11 @@ header.sticky {
     .assignment-card img {
         width: 150px;
     }
+
+    .about-img{
+        width: 350px;
+        height: 600px;
+    }
 }
 
 @media all and (max-width: 935px) {
@@ -1280,7 +1282,7 @@ header.sticky {
     }
 
     .about-img {
-        width: 430px;
+        width: 310px;
         height: 510px;
     }
 
@@ -1340,7 +1342,7 @@ header.sticky {
 
     .about-img {
         width: 300px;
-        height: 370px;
+        height: 470px;
     }
 }
 
