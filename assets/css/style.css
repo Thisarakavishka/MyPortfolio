@@ -497,6 +497,7 @@ header.sticky {
     margin-bottom: 10px;
     border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: filter 0.3s;
 }
 
 .image-container {
@@ -532,6 +533,49 @@ header.sticky {
     font-size: 22px;
     color: #7284A6;
 }
+
+
+.popup-button {
+    display: none;
+    width: 150px;
+    height: 50px;
+    background-color: #8672E9;
+    border-radius: 100px;
+    border: unset;
+    text-decoration: unset;
+    transition-duration: .3s;
+    position: relative;
+    top: -230px;
+    left: 50px;
+    cursor: pointer;
+    margin: 15px;
+    filter: none;
+}
+
+.popup-button > a {
+    color: white;
+    font-size: 12px;
+    text-decoration: unset;
+}
+
+.popup-button:hover {
+    background: #fff;
+    color: #8672E9;
+    border: 1px solid #8672E9;
+}
+
+.popup-button:hover a {
+    color: #8672E9;
+}
+
+.assignment-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.assignment-card:hover .popup-button {
+    display: block;
+}
+
 
 /*                /////////////////////////////////////    gallery section   /////////////////////////////////////////////////////               */
 
@@ -971,6 +1015,11 @@ header.sticky {
     #contact-send-btn {
         left: 12vw;
     }
+
+    .popup-button {
+        top: -230px;
+        left: 70px;
+    }
 }
 
 
@@ -1047,7 +1096,7 @@ header.sticky {
         width: 150px;
     }
 
-    .about-img{
+    .about-img {
         width: 350px;
         height: 600px;
     }
@@ -1379,6 +1428,7 @@ header.sticky {
         height: 50px;
         right: 100px;
     }
+
     #contact-send-btn > a {
         font-size: 18px;
     }
